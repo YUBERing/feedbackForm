@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="../style/main.css">
+  <link rel="stylesheet" href="../style/feedback-form.css">
+  <link rel="stylesheet" href="../style/input.css">
+  <link rel="stylesheet" href="../style/textarea.css">
+  <link rel="stylesheet" href="../style/button.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.4.0/dist/axios.min.js"></script>
+</head>
+<body>
+  <main class="main">
+    <div class="feedback-page">
+      <div class='feedback-page__header'>
+        Обратная связь
+      </div>
+      <form class="feedback-page__form" name="feedbackForm">
+        <div class="input">
+          <div class="input__label">
+            Имя
+          </div>
+          <input id="firstName" type="text" name="firstName" class="input__field" placeholder="Введите свое имя">
+          <div class="input__error" id="nameError">
+
+          </div>
+        </div>
+        <div class="input">
+          <div class="input__label">
+            Телефон
+          </div>
+          <input id="phone" type="text" name="phone" class="input__field" placeholder="89092563360">
+          <div class="input__error" id="phoneError">
+
+          </div>
+        </div>
+        <div class="input">
+          <div class="input__label">
+            Email
+          </div>
+          <input id="email" type="text" name="email" class="input__field" placeholder="example@mail.com">
+          <div class="input__error" id="emailError">
+
+          </div>
+        </div>
+        <div class="textarea">
+          <div class="textarea__label">
+            Сообщение
+          </div>
+          <textarea id="message" name="text" class="textarea__field"></textarea>
+          <div class="textarea__error" id="messageError">
+
+          </div>
+        </div>
+        <div class="feedback-page__footer">
+          <div class='feedback-page__answer' id="answer">
+            
+          </div>
+          <button class="button" type="submit" id="submitButton">
+            Отправить
+          </button>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+<script src="../js/index.js"></script>
+
+</html>
